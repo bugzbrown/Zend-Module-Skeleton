@@ -1,7 +1,3 @@
 #!/bin/bash
 mkdir -pv "$1"/{config,src/"$1"/{Controller,Form,Model},view/"$1"/"$1"}
-cd "$1"
-touch "Module.php"
-touch "autoload_classmap.php"
-cd "config"
-touch "module.config.php"
+touch $1/Module.php $1/autoload_classmap.php $1/config/module.config.php
