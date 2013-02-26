@@ -1,3 +1,4 @@
 #!/bin/bash
-mkdir -pv "$1"/{config,src/"$1"/{Controller,Form,Model},view/"$1"/"$1"}
-touch $1/Module.php $1/autoload_classmap.php $1/config/module.config.php
+sanitized=${$1// /-}
+mkdir -pv $sanitized/{config,src/$sanitized/{Controller,Form,Model},view/$sanitized/$sanitized}
+touch $sanitized/Module.php $sanitized/autoload_classmap.php $sanitized/config/module.config.php
