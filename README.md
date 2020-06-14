@@ -1,6 +1,8 @@
 Zend-Module-Skeleton
 ====================
 
+## Archived - No longer relevant
+
 Shell script for creating a basic Zend module.
 
 Install
